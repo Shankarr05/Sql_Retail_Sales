@@ -128,8 +128,8 @@ GROUP
 ORDER BY 1
 ```
 
--- Q.7 Write a SQL query to find the top 3 product categories with the highest average quantity sold per transaction.
-
+7 **Write a SQL query to find the top 3 product categories with the highest average quantity sold per transaction.**:
+```sql
 SELECT 
     category,
     AVG(quantity) AS avg_quantity_sold
@@ -140,6 +140,7 @@ GROUP BY
 ORDER BY 
     avg_quantity_sold DESC
 LIMIT 3;
+```
 
 8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
 ```sql
